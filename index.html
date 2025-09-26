@@ -306,7 +306,7 @@
 
         /* How it Works Section */
         .how-it-works {
-            background: linear-gradient(135deg, #00bcd4 0%, #0097a7 100%);
+            background: linear-gradient(135deg, #01B7DC 0%, #01B7DC 100%);
             padding: 80px 0;
             color: white;
         }
@@ -314,6 +314,7 @@
         .how-it-works h2 {
             text-align: center;
             margin-bottom: 20px;
+            color: #2c3e50; /* Dark text on light cards */
         }
 
         .how-it-works-subtitle {
@@ -321,40 +322,59 @@
             margin-bottom: 50px;
             font-size: 16px;
             opacity: 0.9;
+            color: #2c3e50;
         }
 
         .steps-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
+            gap: 20px;
+            margin-bottom: 40px;
         }
 
         .step-card {
-            text-align: center;
+            background: white;
+            border-radius: 5px;
+            padding: 30px 25px;
+            text-align: left;
             position: relative;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            color: #2c3e50;
         }
 
         .step-number {
-            width: 40px;
-            height: 40px;
+            position: absolute;
+            top: -15px;
+            right: 20px;
+            width: 30px;
+            height: 30px;
             background: #dc3545;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 0 auto 20px;
             font-weight: 700;
-            font-size: 18px;
+            font-size: 16px;
+            color: white;
+            box-shadow: 0 2px 8px rgba(220, 53, 69, 0.3);
         }
 
         .step-card h4 {
             margin-bottom: 15px;
+            color: #2c3e50;
+            font-size: 18px;
+            font-weight: 600;
         }
 
         .step-card p {
-            opacity: 0.9;
+            color: #6c757d;
             font-size: 14px;
             line-height: 1.6;
+        }
+
+        .get-started-container {
+            text-align: center;
+            margin-top: 40px;
         }
 
         /* Responsive Design */
@@ -388,7 +408,7 @@
             <div class="container">
                 <h1>Get Discovered as a Tailor on<br>Sewmaxx</h1>
                 <p>Get listed on Sewmaxx and make it easier for clients to discover your services, book orders and grow your reach</p>
-                <sewmaxx-button type="primary" size="large">Create Account</sewmaxx-button>
+                <sewmaxx-button type="primary" size="large" icon="images/telegram.png">Create Account </sewmaxx-button>
             </div>
         </section>
 
@@ -478,6 +498,7 @@
         </section>
 
         <!-- How it Works Section -->
+        <!-- How it Works Section -->
         <section class="how-it-works">
             <div class="container">
                 <h2>How it Works</h2>
@@ -507,6 +528,10 @@
                         <h4>Deliver & Grow</h4>
                         <p>Complete your orders, get rated by clients, and grow your visibility and earnings on Sewmaxx.</p>
                     </div>
+                </div>
+                
+                <div class="get-started-container">
+                    <sewmaxx-button type="primary" size="large" icon="images/telegram.png">Get Started</sewmaxx-button>
                 </div>
             </div>
         </section>

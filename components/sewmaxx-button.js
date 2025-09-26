@@ -327,8 +327,11 @@ class SewmaxxButton extends HTMLElement {
                 tabindex="0"
             >
                 <span class="content">
-                    ${this.icon ? `<i class="fas fa-${this.icon} icon"></i>` : ''}
                     ${buttonText}
+                    ${this.icon ? (this.icon.includes('.png') || this.icon.includes('.jpg') || this.icon.includes('.svg') ? 
+                        `<img src="${this.icon}" alt="icon" class="icon-img">` : 
+                        `<i class="fas fa-${this.icon} icon"></i>`) : ''}
+                    
                 </span>
             </${tag}>
         `;
