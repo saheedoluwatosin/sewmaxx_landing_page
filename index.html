@@ -129,21 +129,21 @@
             margin-top: 40px;
         }
 
-        .charge-card {
+        /* .charge-card {
             background: #f8f9fa;
             border-radius: 12px;
             padding: 30px;
             text-align: center;
             border: 2px solid transparent;
             transition: all 0.3s ease;
-        }
+        } */
 
         .charge-card:hover {
             border-color: #dc3545;
             transform: translateY(-5px);
         }
 
-        .charge-card .icon {
+        /* .charge-card .icon {
             width: 60px;
             height: 60px;
             background: #DEF4FF;
@@ -154,7 +154,7 @@
             margin: 0 auto 20px;
             color: red;
             font-size: 24px;
-        }
+        } */
 
         .charge-card h3 {
             color: #2c3e50;
@@ -172,6 +172,62 @@
             color: #6c757d;
             font-size: 14px;
             line-height: 1.5;
+        }
+
+        .charge-card {
+            background: white;
+            border-radius: 12px;
+            padding: 40px 30px;
+            text-align: left;
+            border: 1px solid #e9ecef;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .charge-card .icon {
+            width: 40px;
+            height: 40px;
+            background: #DEF4FF;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0; /* Prevents icon from shrinking */
+        }
+
+        .charge-card .icon img {
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+        }
+
+        .charge-card h3 {
+            color: #2c3e50;
+            margin: 0; /* Remove margin since it's now in flexbox */
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .charge-card .percentage {
+            font-size: 16px;
+            font-weight: 500;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+
+        .charge-card .details {
+            color: #6c757d;
+            font-size: 16px;
+            line-height: 1.6;
+            font-weight: 400;
         }
 
         /* Requirements Section */
@@ -352,19 +408,23 @@
                 
                 <div class="charges-grid">
                     <div class="charge-card">
-                        <div class="icon">
-                            <img src="images/direct_credit.png" alt="">
+                        <div class="card-header">
+                            <div class="icon">
+                                <img src="images/direct_credit.png" alt="">
+                            </div>
+                            <h3>Direct Client Orders</h3>
                         </div>
-                        <h3>Direct Client Orders</h3>
                         <div class="percentage">Tailors keep 85-90% of the order</div>
                         <div class="details">Sewmaxx charges 10-15% service fee</div>
                     </div>
                     
                     <div class="charge-card">
-                        <div class="icon">
-                            <img src="images/affilate_client.png" alt="">
+                        <div class="card-header">
+                            <div class="icon">
+                                <img src="images/affilate_client.png" alt="">
+                            </div>
+                            <h3>Affiliate Client Orders</h3>
                         </div>
-                        <h3>Affiliate Client Orders</h3>
                         <div class="percentage">Tailors keep 60% of the order</div>
                         <div class="details">
                             Affiliate earns 30% referral fee<br>
